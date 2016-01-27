@@ -148,7 +148,7 @@ Contact for commercial license: info@litehelpers.net
       error(newSQLError('database not open'));
       return;
     }
-    this.addTransaction(new SQLitePluginTransaction(this, fn, error, success, true, false));
+    this.addTransaction(new SQLitePluginTransaction(this, fn, error, success, true, true));
   };
 
   SQLitePlugin.prototype.readTransaction = function(fn, error, success) {
